@@ -7,10 +7,13 @@
 </head>
 <body>
     <p>Google Calendar API Quickstart</p>
-
-    <!--Add buttons to initiate auth sequence and sign out-->
+<header>
+    <button id="authorize_button" onclick="handleAuthClick()">Botón</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+</header>
+    <!--Add buttons to initiate auth sequence and sign out-->
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
 
@@ -21,8 +24,8 @@
       /* exported handleSignoutClick */
 
       // TODO(developer): Set to client ID and API key from the Developer Console
-      const CLIENT_ID = '<YOUR_CLIENT_ID>';
-      const API_KEY = '<YOUR_API_KEY>';
+      const CLIENT_ID = '<240250686126-1o7dqeu6138r1ka9ttsgis52m663icip.apps.googleusercontent.com';
+      const API_KEY = '<AIzaSyBQWvy4t7X5ea4_ykGnR_L-Nc9gxtOprWU>';
 
       // Discovery doc URL for APIs used by the quickstart
       const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
